@@ -12,7 +12,6 @@ from email.utils import formataddr
 class MailMailExt(models.Model):
     _inherit = "mail.mail"
 
-    @api.model_create_multi
     def create(self, vals_list):
         mails = super(MailMailExt, self).create(vals_list)
 
