@@ -9,9 +9,9 @@ from odoo import fields, models, api
 
 
 class MailAliasExt(models.Model):
-    _inherit = 'mail.alias'
+    _inherit = "mail.alias"
 
-    operating_unit_id = fields.Many2one('operating.unit', 'Operating Unit')
+    operating_unit_id = fields.Many2one("operating.unit", "Operating Unit")
 
     @api.multi
     def _get_alias_domain(self):

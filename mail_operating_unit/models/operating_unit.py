@@ -10,9 +10,10 @@ from odoo import fields, models
 
 class OperatingUnitExt(models.Model):
 
-    _inherit = 'operating.unit'
+    _inherit = "operating.unit"
 
-    catchall_alias = fields.Char(string='Catchall alias')
-    catchall_domain = fields.Char(string='Catchall domain')
+    catchall_alias = fields.Char(string="Catchall alias")
+    catchall_domain = fields.Char(string="Catchall domain")
     outgoing_mail_server_id = fields.Many2one(
-        'ir.mail_server', string='Outgoing Mail Server')
+        "ir.mail_server", string="Outgoing Mail Server"
+    )
